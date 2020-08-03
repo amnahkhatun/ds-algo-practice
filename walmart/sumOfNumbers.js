@@ -2,8 +2,10 @@
 // let target = 9;
 // let arr = [1, 2, 3, 5, 6, 7];
 // let target = 8;
-let arr = [1, 2, 3, 4, 5, 6, 7];
-let target = 11;
+let arr = [2, 7, 11, 15];
+let target = 9;
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+// let target = 11;
 
 sumOfNumbers = (arr, target) => {
   let p1 = 0; //1,2
@@ -23,7 +25,7 @@ sumOfNumbers = (arr, target) => {
   }
   console.log(pair, pair.length);
 };
-// sumOfNumbers(arr, target);
+sumOfNumbers(arr, target);
 
 sumOfNumbers1 = (arr, target) => {
   let myMap = new Map();
@@ -37,6 +39,6 @@ sumOfNumbers1 = (arr, target) => {
       myMap.set(arr[i], count + 1);
     }
   }
-  console.log(count, arr);
+  // console.log(count, arr);
 };
 sumOfNumbers1(arr, target);
