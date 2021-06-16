@@ -1,5 +1,5 @@
-let s = "leetcode";
-// let s = "aadadaad";
+// let s = "leetcode";
+let s = "aadadaad";
 
 firstUniqChar1 = s => {
   let char = s.split("");

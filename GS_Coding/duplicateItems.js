@@ -5,14 +5,14 @@ duplicate = nums => {
     for (let j = i + 1; j < nums.length; j++) {
       if (nums[i] === nums[j]) {
         return nums[i];
-        break;
       }
     }
   }
   return false;
 };
 
-// console.log(duplicate(nums));
+console.log(duplicate(nums));
+
 duplicate1 = nums => {
   let set1 = new Set();
   for (let i = 0; i < nums.length; i++) {
@@ -24,4 +24,4 @@ duplicate1 = nums => {
   }
   return false;
 };
-console.log(duplicate1(nums));
+// console.log(duplicate1(nums));

@@ -8,9 +8,7 @@ reverseString = s => {
   let left = 0;
   let right = s.length - 1;
   while (left < right) {
-    let temp = s[left];
-    s[left++] = s[right];
-    s[right--] = temp;
+    [s[left++], s[right--]] = [s[right], s[left]];
   }
   console.log(s.join(""));
 };
@@ -27,12 +25,14 @@ reverseString(s);
 // // reverseString1(s);
 
 reverseStringRecursive = s => {
-  console.log(s);
+  // console.log(s);
   // return s === "" ? s : s.slice(-1) + reverseStringRecursive(s.slice(0, -1));
   return s === "" ? s : reverseStringRecursive(s.substr(1)) + s.charAt(0);
 };
 
 // console.log(reverseStringRecursive("hello"));
+
+//using two pointer theorem
 
 let x = 1534236469;
 reverseDigit = x => {
@@ -54,6 +54,6 @@ reverseDigit = x => {
   if (rev > 2147483647 || rev < -2147483648) {
     rev = 0;
   }
-  console.log(rev);
+  // console.log(rev);
 };
 // reverseDigit(x);

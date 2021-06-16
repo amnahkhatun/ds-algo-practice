@@ -1,7 +1,7 @@
 // let A = [1, 2, 5, 4, 0, 2];
 // let B = [2, 4, 5, 0, 1, 2];
 let A = [1, 2, 5];
-let B = [2, 4, 15];
+let B = [2, 4, 5];
 
 function arrayEqualOrNot(A, B) {
   let map1 = new Map();

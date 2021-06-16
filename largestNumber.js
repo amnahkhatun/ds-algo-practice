@@ -11,6 +11,7 @@ function largestNumber(nums) {
   );
 }
 largestNumber(nums);
+
 // let n = getGreaterNum(2281, 2);
 // console.log(n);
 // let greaterIndex = 0;

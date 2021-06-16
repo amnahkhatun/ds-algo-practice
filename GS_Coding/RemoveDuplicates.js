@@ -36,3 +36,15 @@ removeDuplicates1 = nums => {
 
 // removeDuplicates1(nums);
 // console.log(nums);
+
+removeDuplicates2 = nums => {
+  let nums2 = [];
+  for (let j = 0; j < nums.length; j++) {
+    if (!nums2.includes(nums[j])) {
+      nums2.push(nums[j]);
+    }
+  }
+  return nums2;
+};
+
+// console.log(removeDuplicates2(nums));
