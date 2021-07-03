@@ -67,4 +67,4 @@ let mergeSortedArray2 = (arr1, arr2) => {
   return mergedArray;
 };
 console.log(mergeSortedArray2([0, 3, 4, 31], [3, 4, 6, 30]));
-console.log(mergeSortedArray2([1, 2, 3], [4, 5, 6]));
+console.log(mergeSortedArray2([1, 2], [4, 5, 6]));

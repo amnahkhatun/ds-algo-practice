@@ -24,4 +24,4 @@ duplicate1 = nums => {
   }
   return false;
 };
-// console.log(duplicate1(nums));
+console.log(duplicate1(nums));

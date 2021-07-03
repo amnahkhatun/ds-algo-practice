@@ -48,3 +48,13 @@ removeDuplicates2 = nums => {
 };
 
 // console.log(removeDuplicates2(nums));
+function removeDuplicate(arr) {
+  return [...new Set(arr)];
+}
+function removeDuplicate(arr) {
+  let temp = arr.filter((elem, index) => {
+    return arr.indexOf(elem) === index;
+  });
+  return temp;
+}
+// console.log(removeDuplicate([6, 4, 6, 5, 8, 8, 10, 1]));
