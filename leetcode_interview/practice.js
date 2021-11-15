@@ -1,30 +1,29 @@
-mergeSortedArray2 = (arr1, arr2) => {
-  const mergedArr = [];
-  let arr1Item = arr1[0];
-  let arr2Item = arr2[0];
-  let i = 1;
-  let j = 1;
+let arr = [3, 5, 2, 8, 6, 9, 4, 1];
 
-  if (arr1.length < 2) {
-    return arr1;
-  }
-  if (arr2.length < 2) {
-    return arr2;
-  }
-
-  while (arr1Item || arr2Item) {
-    if (arr2Item === undefined || arr1Item < arr2Item) {
-      mergedArr.push(arr1Item);
-      arr1Item = arr1[i];
-      i++;
-    } else {
-      mergedArr.push(arr2Item);
-      arr2Item = arr2[j];
-      j++;
+function bubbleSort(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length; j++) {
+      if (arr[j] > arr[j + 1]) {
+        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+      }
     }
   }
-  return mergedArr;
-};
+  return arr;
+}
 
-console.log(mergeSortedArray2([0, 3, 4, 31], [3, 4, 6, 30]));
-console.log(mergeSortedArray2([1, 2], [4, 5, 6]));
+// console.log(bubbleSort(arr));
+
+// function selectionSort(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+
+//   }
+//   return arr;
+// }
+
+// console.log(selectionSort(arr));
+
+let a = 10;
+let b = 20;
+console.log("before swap", a, b);
+[a, b] = [b, a];
+console.log("after swap", a, b);

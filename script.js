@@ -1,3 +1,19 @@
+import Logger from './Logger';
+
+const custom = new Logger
+
+custom.log()
+
+// var firstName = "John";
+
+// function printName(firstName) {
+//   var lastName = "Doe";
+//   return firstName + " " + lastName;
+// }
+
+// var displayName1 = printName(firstName);
+// console.log(displayName1);
+
 // // higher order function and closure
 
 // function greet(greeting) {
@@ -93,8 +109,12 @@
 // var a = 10;
 // var b = null;
 
-let user = {
-  fname: "amnah"
-};
-let user2 = user;
-user.fname = "rosh";
+// let user = {
+//   fname: "amnah"
+// };
+// let user2 = user;
+// user.fname = "rosh";
+
+// let displayName2 = printName("Nikon Tesla");
+
+
