@@ -1,5 +1,6 @@
 // let nums = [0, 1, 0, 3, 12];
-let nums = [1, 1, 0, 3, 12, 0];
+// let nums = [1, 1, 0, 3, 12, 0];
+let nums = [0,0,1]
 
 moveZeroes = nums => {
   let start = 0;
@@ -20,4 +21,16 @@ moveZeroes = nums => {
   console.log(nums);
 };
 
-moveZeroes(nums);
+// moveZeroes(nums);
+
+var moveZeroes1 = function(nums) {
+    
+    for (i = nums.length -1; i >= 0; i--) {
+        if (nums[i] === 0)
+            nums.push(nums.splice(i, 1));
+                console.log(nums,i)
+
+    }
+};
+moveZeroes1(nums);
+
