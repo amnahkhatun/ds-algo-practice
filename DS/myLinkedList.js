@@ -105,12 +105,38 @@ class LinkedList {
   }
 }
 
-const myLinkedList = new LinkedList(10);
-myLinkedList.append(5);
-myLinkedList.append(16);
-myLinkedList.prepend(1);
+
+
+// const myLinkedList = new LinkedList(10);
+// myLinkedList.append(5);
+// myLinkedList.append(16);
+// myLinkedList.prepend(1);
 // myLinkedList.insert(2, 99);
 // myLinkedList.remove(2);
-myLinkedList.reverse();
+// myLinkedList.reverse();
 
-console.log(myLinkedList.printList());
+// console.log(myLinkedList.printList());
+
+const head = [1,2,3,4,5,6]
+let middleNode = function(head) {
+    // let hi = head, count = 1;
+    // while (hi.next) {
+    //     hi = hi.next;
+    //     count++;
+    // }
+    // console.log(count,'count');
+    // count = parseInt(count / 2);
+
+    // while(count){
+    //     head=head.next;
+    //     count--;
+    // }
+    // return head;
+    let slow = head, fast = head
+    while(fast !== null && fast.next !== null){
+        slow = slow.next
+        fast = fast.next.next
+    }
+    return slow
+};
+console.log(middleNode(head))
