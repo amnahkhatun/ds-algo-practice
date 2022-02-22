@@ -25,7 +25,7 @@ sumOfNumbers = (arr, target) => {
   }
   console.log(pair, pair.length);
 };
-sumOfNumbers(arr, target);
+// sumOfNumbers(arr, target);
 
 sumOfNumbers1 = (arr, target) => {
   let myMap = new Map();
@@ -42,3 +42,20 @@ sumOfNumbers1 = (arr, target) => {
   console.log(count, arr);
 };
 // sumOfNumbers1(arr, target);
+
+let numbers = [2,7,11,15], target = 9
+// return [1, 2]
+
+var twoSum = function(numbers, target) {
+    let myMap = new Map();
+    for(let i=0;i<numbers.length;i++){
+        let compliment = target - numbers[i]; 
+        if(myMap.has(compliment)){
+         return [myMap.get(compliment),i+1]
+        } else {
+          myMap.set(numbers[i],  i+1)
+        }
+    }
+};
+
+console.log(twoSum(numbers,target))
